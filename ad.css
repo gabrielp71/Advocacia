@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Tornando as caixas adaptaveis (caixas não ficam sobrando dentro dos elementos)*/
+}
+
+header {
+    padding: 2rem 1rem;
+    background-color: aquamarine;
+}
+
+.container {
+    padding: 6rem 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
