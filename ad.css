@@ -7,6 +7,45 @@
 header {
     padding: 2rem 1rem;
     background-color: gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    position: sticky;
+    top: 0;
+    left: 0;
+
+
+    z-index: 1000;
+}
+
+.hamburguer {
+
+    display: none;
+
+}
+
+.logo-header {
+    width: 5rem;
+}
+
+.nav-header {
+    display: flex;
+    justify-content: end;
+}
+
+.ul-list {
+    display: flex;
+    gap: 20px;
+}
+
+.ul-list a {
+    color: rgb(20, 20, 20);
+    text-decoration: none;
+    background-color: #ededf0;
+    font-weight: 700;
+    padding: 0.5rem 1.3rem;
 }
 
 .container {
@@ -89,4 +128,116 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.sessao04 {
+    background-image: url(imagens/poltrona4.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+footer {
+    padding: 2rem 1rem;
+    background-color: #493d3f;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.ul-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.ul-footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.img-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sociais {
+  padding: 1rem;
+  display: flex;
+  gap: 10px;
+}
+
+.sociais i {
+    color: white;
+    font-size: 2rem;
+}
+
+.img-line img {
+    margin: 1rem;
+    width: 10rem;
+}
+
+/*FIM DO RODAPÉ*/
+
+@media (max-width: 768px) {
+
+    .logo-header {
+        width: 3rem;
+    }
+
+    .div01 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .div01 p {
+        font-size: 1.6rem;
+        margin: 25px;
+    }
+
+    .sessao03 {
+        gap: 5rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .div-sessao04 button {
+        width: 12rem;
+        border: none;
+
+    }
+
+    .ul-list {
+        display: none;
+    }
+
+    .hamburguer {
+        display: flex;
+        padding: 0.3rem;
+        background: transparent;
+        color: white;
+        font-size: 1.5rem;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 40px;
+
+    }
+
+    .ul-footer {
+        text-align: center;
+    }
 }
